@@ -2,7 +2,7 @@
 
 # 群聊日常分析插件
 
-[![Plugin Version](https://img.shields.io/badge/当前版本-v5.5.4-blue.svg?style=for-the-badge&color=76bad9)](https://github.com/SXP-Simon/astrbot_plugin_qq_group_daily_analysis)
+[![Plugin Version](https://img.shields.io/badge/当前版本-v5.6.2-blue.svg?style=for-the-badge&color=76bad9)](https://github.com/SXP-Simon/astrbot_plugin_qq_group_daily_analysis)
 [![AstrBot](https://img.shields.io/badge/AstrBot-插件市场入口-ff69b4?style=for-the-badge)](https://cloud.astrbot.app/plugin/SXP-Simon/astrbot_plugin_qq_group_daily_analysis)
 [![AstrBot Version](https://img.shields.io/badge/AstrBot-%3E%3D4.24.1-orange.svg?style=for-the-badge)](https://github.com/AstrBotDevs/AstrBot)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
@@ -11,10 +11,10 @@
 <table align="center" style="border: none;">
   <tr>
     <td style="border: none;" align="center">
-      <a href="https://qm.qq.com/q/oTzIrdDBIc"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/QQ.png" width="300" alt="QQ Group"></a>
+      <a href="https://qm.qq.com/q/oTzIrdDBIc"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/QQ.png" width="300" alt="QQ Group"></a>
     </td>
     <td style="border: none;" align="center">
-      <a href="https://t.me/AstrBotPluginGroupDailyAnalysis"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/TG.png" width="300" alt="Telegram Group"></a>
+      <a href="https://t.me/AstrBotPluginGroupDailyAnalysis"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/TG.png" width="300" alt="Telegram Group"></a>
     </td>
   </tr>
   <tr>
@@ -47,29 +47,29 @@ _✨ 一个基于 AstrBot 的智能群聊分析插件，支持 **OneBot** ( [Nap
   <tr>
     <td align="center" width="33.3%" valign="top">
       <p><b>Scrapbook (默认)</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/scrapbook-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/scrapbook-demo.jpg" alt="Scrapbook 示例" height="520"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/scrapbook-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/scrapbook-demo.jpg" alt="Scrapbook 示例" height="520"></a>
     </td>
     <td align="center" width="33.3%" valign="top">
       <p><b>Retro Futurism</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/retro_futurism-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/retro_futurism-demo.jpg" alt="Retro Futurism 示例" height="520"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/retro_futurism-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/retro_futurism-demo.jpg" alt="Retro Futurism 示例" height="520"></a>
     </td>
     <td align="center" width="33.3%" valign="top">
       <p><b>HatsuneMiku</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/HatsuneMiku-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/HatsuneMiku-demo.jpg" alt="HatsuneMiku 示例" height="520"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/HatsuneMiku-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/HatsuneMiku-demo.jpg" alt="HatsuneMiku 示例" height="520"></a>
     </td>
   </tr>
   <tr>
     <td align="center" width="33.3%" valign="top">
       <p><b>Hack</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/hack-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/hack-demo.jpg" alt="Hack 示例" height="520"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/hack-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/hack-demo.jpg" alt="Hack 示例" height="520"></a>
     </td>
     <td align="center" width="33.3%" valign="top">
       <p><b>ATRI</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/ATRI-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/ATRI-demo.jpg" alt="ATRI 示例" height="520"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/ATRI-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/ATRI-demo.jpg" alt="ATRI 示例" height="520"></a>
     </td>
     <td align="center" width="33.3%" valign="top">
       <p><b>art_nouveau</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg" alt="art_nouveau 示例" height="520"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg" alt="art_nouveau 示例" height="520"></a>
     </td>
   </tr>
 </table>
@@ -79,7 +79,7 @@ _✨ 一个基于 AstrBot 的智能群聊分析插件，支持 **OneBot** ( [Nap
 <table align="center" width="100%">
   <tr>
     <td align="center" width="100%" valign="top">
-      <img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/comic-demo.jpg" alt="群每日漫画功能" width="60%">
+      <img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/comic-demo.jpg" alt="群每日漫画功能" width="60%">
       <p><b>参考 Atri 人格的群每日漫画 Demo</b></p>
     </td>
   </tr>
@@ -110,41 +110,41 @@ _✨ 一个基于 AstrBot 的智能群聊分析插件，支持 **OneBot** ( [Nap
   <tr>
     <td align="center" width="50%" valign="top">
       <p><b>运行总览</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/overview.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/overview.png" alt="运行总览" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/overview.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/overview.png" alt="运行总览" width="100%"></a>
     </td>
     <td align="center" width="50%" valign="top">
       <p><b>配置中心</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/conf.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/conf.png" alt="配置中心" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/conf.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/conf.png" alt="配置中心" width="100%"></a>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%" valign="top">
       <p><b>分析记录</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/session_history.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/session_history.png" alt="分析记录" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/session_history.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/session_history.png" alt="分析记录" width="100%"></a>
     </td>
     <td align="center" width="50%" valign="top">
       <p><b>历史报告列表</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/history_report.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/history_report.png" alt="历史报告列表" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/history_report.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/history_report.png" alt="历史报告列表" width="100%"></a>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%" valign="top">
       <p><b>任务执行详情与断点续跑</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/resume.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/resume.png" alt="任务执行详情与断点续跑" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/resume.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/resume.png" alt="任务执行详情与断点续跑" width="100%"></a>
     </td>
     <td align="center" width="50%" valign="top">
       <p><b>任务执行详情（子模块状态与异常诊断）</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/session.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/session.png" alt="子模块状态与异常诊断" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/session.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/session.png" alt="子模块状态与异常诊断" width="100%"></a>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%" valign="top">
       <p><b>统计与消耗</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/analysis.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/analysis.png" alt="统计与消耗" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/analysis.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/analysis.png" alt="统计与消耗" width="100%"></a>
     </td>
     <td align="center" width="50%" valign="top">
       <p><b>运行日志</b></p>
-      <a href="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/runtime_logger.png"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/profile_assets@main/plugin/webui/runtime_logger.png" alt="运行日志" width="100%"></a>
+      <a href="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/runtime_logger.png"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/profile_assets@main/plugin/webui/runtime_logger.png" alt="运行日志" width="100%"></a>
     </td>
   </tr>
 </table>
@@ -361,17 +361,24 @@ _✨ 一个基于 AstrBot 的智能群聊分析插件，支持 **OneBot** ( [Nap
 
 ## 平台支持与要求
 
-| 平台              | 适配器类型                         | 特殊要求/说明                                                                                                                                                        |
-| ----------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **QQ**            | OneBot v11                         | 建议使用 NapCat/Lagrange。需注意消息分页拉取限制。                                                                                                                   |
-| **QQ 官方机器人** | QQ Bot API v2（WebSocket/Webhook） | 需开启群全量消息；只分析启用后实时缓存的消息；图片/HTML 优先显示事件昵称，缺失时使用群内稳定匿名名；Markdown 文本使用成员艾特。                                      |
-| **Discord**       | Discord                            | **必须** 拥有 `Read Message History` (查看消息历史记录) 权限。                                                                                                       |
-| **Telegram**      | Telegram Bot API                   | 若机器人不是群管理员，入群前需先在 BotFather 关闭隐私模式 (`/setprivacy` -> `Disable`)。若机器人已在群内且非管理员，关闭后需要先移出机器人再重新拉入，设置才会生效。 |
+| 平台              | 适配器类型                         | 驱动与方言支持                                                                                                                   | 特殊要求/说明                                                                                                                                                        |
+| ----------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **QQ (OneBot)**   | OneBot v11 / v12                   | **方言驱动架构**：内置 NapCat、LLOneBot (LuckyLilliaBot)、SnowLuma、Standard (go-cqhttp / Lagrange / onebots / WeChatBridge) 驱动 | 插件通过 `get_version_info` / `get_version` 自动探测并动态绑定最佳方言驱动；支持多端群相册、群文件多级解包、协议端真实头像与全链路观测日志。                       |
+| **QQ 官方机器人** | QQ Bot API v2（WebSocket/Webhook） | 官方统一 API                                                                                                                     | 需开启群全量消息；只分析启用后实时缓存的消息；图片/HTML 优先显示事件昵称，缺失时使用群内稳定匿名名；Markdown 文本使用成员艾特。                                      |
+| **Discord**       | Discord                            | Discord Gateway                                                                                                                  | **必须** 拥有 `Read Message History` (查看消息历史记录) 权限。                                                                                                       |
+| **Telegram**      | Telegram Bot API                   | Telegram Bot API                                                                                                                 | 若机器人不是群管理员，入群前需先在 BotFather 关闭隐私模式 (`/setprivacy` -> `Disable`)。若机器人已在群内且非管理员，关闭后需要先移出机器人再重新拉入，设置才会生效。 |
 
-> [!warning]
-> **实验性开发中**：
+> [!TIP]
+> **OneBot 协议端方言驱动架构特性**：
 >
-> - 多平台支持功能尚在开发中，当前仅支持 OneBot (NapCat, LLOneBot, Snowluma), QQ 官方机器人, Discord, Telegram。
+> 插件采用了开放闭合原则 (OCP) 的**方言驱动解耦架构**，在连接时自动探测后端实现并无缝自适应：
+> 1. **NapCat.Onebot**：支持标准逆序分页、独有的 `upload_file_stream` 分块流式上传大图/兜底、`get_qun_album_list` 群相册列表与协议端真实头像解析。
+> 2. **LLOneBot (LuckyLilliaBot)**：支持相册上传专属 `files` 列表参数、相册列表 `data: list` 数组解包与多层嵌套兼容。
+> 3. **SnowLuma**：支持专属 `message_id` 锚点分页拉取群历史（不传 `reverseOrder`）、精准识别 `result=120` / `rejected` 发送拒绝与禁言错误。
+> 4. **Standard (go-cqhttp / Lagrange / onebots / 微信桥接 WeChatBridge)**：
+>    - **真实用户头像**：针对微信/企业微信接入等映射数字 ID 场景，优先通过 `get_stranger_info` / `get_user_info` 获取真实头像 URL（带 1 小时正缓存与并发去重），失败时自动回退官方 CDN 并进入 10 分钟负缓存，杜绝重复无效请求。
+>    - **群文件与相册多级解包**：自动兼容 `data.folders`、`data.album_list`、顶层列表等不同协议端返回格式，确保文件夹自动创建与归档不回退。
+>    - **全链路可观测日志**：动作发起、参数目标、原始响应 Payload 与解析降级流转全景上报，方便快速诊断排障。
 
 > [!IMPORTANT]
 > **QQ 官方机器人用户注意**：
@@ -496,22 +503,74 @@ AstrBot 更新插件时会先删除旧插件目录，再解压或移动新目录
 
 **忽略**：如果只是偶尔出现（如回复久远消息），不影响机器人核心功能（收发消息），可以直接忽略。
 
-### 图片生成失败/渲染超时的解决办法
+### 图片生成失败 / 渲染返回非图片数据 / 头部 `496e7465726e616c...` 的排查指南
+
+> [!WARNING]
+> **常见报错特征**：
+> - `[群分析插件] 渲染引擎返回了非图片数据: HTTP 500 (Internal Server Error) ...`
+> - `[群分析插件] 渲染结果似乎不是有效的图片数据 (头部: 496e7465726e616c2053)`
+> - `playwright._impl._errors.TimeoutError: Page.goto: Timeout 50000ms exceeded. navigating to "file:///app/data/rendered_....html", waiting until "load"`
+
+#### 🔍 报错根因拆解
+
+十六进制 `496e7465726e616c2053` 转为 ASCII 文本即为 **`Internal S`**（`Internal Server Error`）。说明 T2I 渲染服务在调用 Playwright / Chromium 无头浏览器生成截图时遭遇了内部错误或超时，向 AstrBot 返回了 **HTTP 500 纯文本**而非合法的 PNG/JPEG 二进制图片流。
+
+---
+
+#### 🛠️ 典型根因与排查解决手段
+
+> [!IMPORTANT]
+> **排查手段 1：外链大字体包/图片 CDN 下载阻塞（国内服务器高发）**
+> - **原因**：Playwright `page.goto` 默认使用 `wait_until="load"` 策略，会阻塞等待 HTML 报告中引入的所有外链 CSS、字体包及角色立绘图片全部下载完毕。部分精美模板包含 30MB+ 的中文字体文件或引用的海外 CDN（如 jsDelivr/Fastly），若国内服务器网络波动，50 秒内未全部下载完毕便会触发超时抛出 500。
+> - **解决方案**：
+>   1. **优先走 IPv4 路由（推荐）**：国内云服务器（如腾讯云/阿里云）默认启用了 IPv6，但访问海外 CDN 经常遭遇 IPv6 握手黑洞（超时等待 15~30s）。在宿主机编辑 `/etc/gai.conf`，追加 `precedence ::ffff:0:0/96 100` 强制系统优先走 IPv4。
+>   2. **切换访问环境为 `Overseas`**：在配置中心将访问环境设置为 `Overseas`，直连 Google 官方 Anycast CDN（支持分包切片秒级加载）。
+>   3. **利用双轮渲染容灾**：插件内置双轮渲染机制。若第一轮因大文件下载超时，Chromium 会将已下载资源存入本地缓存，第二轮（建议配置 `jpeg` + `100000ms`）即可直接命中缓存秒级生成。
+
+> [!IMPORTANT]
+> **排查手段 2：容器化部署未挂载共享数据卷 (Volume)**
+> - **原因**：AstrBot 生成的 HTML 报告保存在宿主机的 `astrbot_data` 目录；如果 T2I 服务容器在启动时**未正确挂载该目录**，容器内部的 Chromium 访问 `file:///app/data/rendered_*.html` 时将找不到该文件，直接抛出 `TimeoutError` 或 `ERR_FILE_NOT_FOUND`。
+> - **解决方案**：检查 Docker / Podman 启动参数，确保挂载了与 AstrBot 相同的数据卷：
+>   ```bash
+>   # T2I 容器必须挂载 AstrBot 数据目录至 /app/data 与 /AstrBot/data
+>   -v /path/to/astrbot_data:/app/data \
+>   -v /path/to/astrbot_data:/AstrBot/data
+>   ```
 
 > [!TIP]
-> **图片生成失败/渲染超时的解决办法**
->
-> 如果生成图片失败，日志显示 `渲染策略 ... 返回了无效或空数据`、`Endpoint ... failed` 等并回退到文本总结，通常是因为日报内容过大导致 T2I 渲染超时（默认 30s 左右）。
->
-> ### 1. 调整插件渲染参数
->
-> 插件现支持 **两轮渲染策略**，可在配置面板的 **图片渲染策略 (`t2i_rendering`)** 分组中按需调整：
->
-> - **增加超时时间**：若日报极其复杂（包含大量内联 CSS/JS/图表），请将 `渲染超时 (ms)` 调大。建议范围：30,000ms - 180,000ms (3 分钟)。
-> - **优化回退策略**：建议第一轮使用 `png` + `ultra` 追求极致清晰；第二轮作为回退，建议使用 `jpeg` + `high/normal` 分辨率并配合更长的超时时间，以确保即使在资源受限的情况下也能产出报告。
->
-> ### 2. 使用备用 T2I 服务或自部署
->
+> **排查手段 3：无头环境 Chromium 沙箱或共享内存限制**
+> - **原因**：在资源受限环境下，Chromium 渲染大型高清图片容易因 `/dev/shm` 共享内存不足（默认仅 64MB）或系统 seccomp/沙箱策略拦截导致浏览器进程假死崩溃。
+> - **解决方案**：为 T2I 服务容器补充以下安全参数与内存分配：
+>   ```bash
+>   --shm-size=1g \
+>   --security-opt seccomp=unconfined \
+>   -e PLAYWRIGHT_CHROMIUM_SANDBOX=0
+>   ```
+
+---
+
+#### 📋 底层报错日志查看与 Issue 上报指引
+
+<details>
+<summary><b>点击展开：自部署获取 T2I 真实底层堆栈与向社区反馈</b></summary>
+
+1. **查看 T2I 容器实时运行日志**：
+   ```bash
+   # Podman 部署环境
+   podman logs -f --tail 100 astrbot-t2i-service
+   
+   # Docker 部署环境
+   docker logs -f --tail 100 astrbot-t2i-service
+   ```
+2. **遇到未知十六进制头部 (如 `头部: 1f8b0800...`)**：
+   - 插件已内置响应多态解析，若遇到未知二进制数据，日志中会打印完整 Hex 头部与大小；
+   - 提交 Issue 时请一并附上 **AstrBot 插件运行日志** 与 **T2I 容器终端日志**，以便维护者快速定位是网络压缩编码问题、反向代理拦截还是底层渲染异常。
+
+</details>
+
+> [!NOTE]
+> **更换 T2I 端点或自部署参考**：
+> - **官方自建教程**：[docs.astrbot.app/others/self-host-t2i.html](https://docs.astrbot.app/others/self-host-t2i.html)
 > <details>
 > <summary><b>若配置调整后渲染仍频繁失败，可尝试更换 T2I 服务（点击此行展开说明）：</b></summary>
 >
@@ -525,8 +584,7 @@ AstrBot 更新插件时会先删除旧插件目录，再解压或移动新目录
 > - **国内加速**: `https://t2i.vercel.ciallo.de5.net`
 >   - **说明**: 在国内直接访问原始域名下载图片可能较慢，可选择使用此代理域名。在一段时间内大概率稳定。
 >   </details>
->
-> **更换 T2I 端点或自部署 T2I 参考文档**：[docs.astrbot.app/others/self-host-t2i.html](https://docs.astrbot.app/others/self-host-t2i.html)
+
 
 ## 🤝 参与贡献 (Contributing)
 

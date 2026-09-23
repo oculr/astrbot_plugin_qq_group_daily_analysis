@@ -1,5 +1,42 @@
 # 更新日志 (CHANGELOG)
 
+## [v5.6.2] - ATRI 模板和初音未来模板统一使用国内高速 CDN 镜像访问静态资源
+
+## [v5.6.1] - T2I 渲染可观测性诊断优化、国内 CDN 极速镜像加速与排障指引升级
+
+*   **🌐 【静态资源加速】初音未来等报告模板全面切换国内极速 CDN 镜像 (jsdmirror)**：
+    *   **国内访问极速连通**：将模板与配置中引用的 GitHub 静态资源（徽章、装饰贴纸、头像预设等）由境外容易发生 SSL 握手超时的 `fastly.jsdelivr.net` / `cdn.jsdelivr.net` 全面升级迁移至国内高速镜像 `cdn.jsdmirror.com`。
+    *   **全链路组件同步更新**：同步更新 `template_command_service.py`、`manifest.json`、WebUI 模板预设及 5 个 HTML 渲染模板。
+
+*   **🔍 【可观测性与异常诊断】T2I 渲染异常智能多态诊断与人机友好日志**：
+    *   **告别晦涩 Hex 报错**：新增 `_diagnose_non_image_payload` 智能诊断引擎。针对原日志中晦涩的十六进制文本（如 `496e7465726e616c2053` 即 ASCII `"Internal S"`），自动解码并精准映射为明确的 HTTP 500 状态与中文根因分析。
+    *   **多类型响应深度提取**：自动解构 FastAPI/T2I 服务的 JSON 错误堆栈、HTML 错误页核心标题（如 `502 Bad Gateway`）及 Playwright 超时提示；对未知二进制流保留长度及十六进制特征，清晰指引用户定位容器日志或提交反馈。
+
+*   **📖 【文档与排障指引】README.md 常见问题 (FAQ) 深度补充**：
+    *   **T2I 渲染超时/失败全景排查手册**：结合 Linux / Rootless Podman / Docker 等不同部署环境，详细拆解外链 CDN 阻塞（IPv4 优先配置）、容器数据卷共享挂载缺失（`-v /path/to/astrbot_data:/app/data`）、容器 Chromium 共享内存与沙箱限制（`--shm-size=1g` / `-e PLAYWRIGHT_CHROMIUM_SANDBOX=0`）等 4 大典型根因。
+
+## [v5.6.0] - OneBot 方言驱动架构重构、Trace 任务级 Checkpoint 隔离防覆盖与控制台防重入控制
+
+*   **🧩 【架构重构】OneBot 平台适配器方言驱动架构 (Dialect-Driven Architecture) (#241)**：
+    *   **驱动策略层与特定协议端解耦**：引入 `OneBotDriver` 抽象基类与工厂探测体系，按运行时协议端自动路由至对应驱动（NapCat、LLOneBot、SnowLuma、StandardOneBot 等），彻底消除原适配器中大量对特定端点的盲目轮询、冗余 RPC 尝试与异常捕获。
+    *   **协议端真实用户头像探测与负缓存 (#240)**：针对微信/TG/飞书等非 QQ 平台的 OneBot 桥接网关，优先提取协议端资料接口返回的真实头像 URL（正向缓存 1 小时）；未提供时写入 10 分钟负缓存并平滑回退官方 CDN，避免无谓重试。
+    *   **相册与群文件结构多态解包**：下沉并精准适配各协议端的相册列表（兼容 `data` 为 `list` 数组或嵌套字典）、相册上传（LLOneBot `files` 列表与 NapCat 流式上传）及群文件根目录多层结构解析。
+    *   **全链路可观测日志**：补全方言探测、驱动生命周期、相册轮询与头像正负缓存的诊断日志。
+
+*   **🔒 【观测与隔离】TraceID 随机熵防碰撞与 Checkpoint 任务级隔离防覆盖 (#242)**：
+    *   **高随机熵 TraceID 零碰撞保障**：`TraceContext` 引入 8 位短随机熵（支持 42.9 亿状态空间），彻底消除同毫秒高并发或高频手动/定时触发下的 TraceID 碰撞隐患。
+    *   **阶段产物快照任务级专属隔离**：`CheckpointStore` 主键与存储模型升级为绑定任务实例的复合键（`{group_id}_{date_str}_{stage_name}_{trace_id}`），彻底根治同群同天多次分析时 Checkpoint 发生覆盖覆写的问题。
+    *   **断点续跑精确寻址与归档解耦**：`CrashRecoveryService` 与 `resume_analysis` 优先基于 `trace_id` 捞取专属任务快照，杜绝跨任务脏读；免 Token 重绘优先从 `HistoryStore` 读取归档产物，明确临时快照与长期历史报告的职责边界。
+
+*   **🛡️ 【防重入控制】全链路群锁与任务状态即时防重入拦截**：
+    *   **命令入口防重入**：在 `/群分析` 聊天命令入口增加 `is_group_running` 判断，目标群正在分析时立即返回友好提示并快速退出，避免排队积压与 Token 无谓损耗。
+    *   **WebUI 触发防重入**：控制台手动触发接口在群任务执行中时即时响应 `409 Conflict` 与明确提示，防止重复启动后台并发任务。
+
+*   **🖥️ 【WebUI 数据管理】阶段快照控制台与详情排版重构**：
+    *   **快照详情 Modal 结构化排版**：详情弹窗由原挤压折行的多列栅格重构为 Ant Design `Descriptions` 结构化边框卡片，阶段全称与长 Trace ID 舒展展示，并内嵌 Trace ID 一键复制按钮。
+    *   **表格渲染 Key 修复与 Trace ID 专属列**：修复快照表格 `rowKey` 在同阶段多任务时的渲染冲突；新增「任务 Trace ID」列与标签，支持精准区分 Legacy 按天快照与任务专属快照，并支持按 Trace 级别单点精准删除。
+    *   **表格横向自适应滚动**：拓宽流水线阶段与 Trace ID 列宽，表格横向滚动适配至 1050px。
+
 ## [v5.5.4] - 修复模板列表中图片上传由于 DOM ID 重复导致错位添加至首项的问题
 
 ## [v5.5.3] - 移动端配置中心分组支持一键收纳展开，完善各表格横向自适应滚动
@@ -70,7 +107,7 @@
     *   **复古艺术美学设计**：以 19 世纪末新艺术运动与穆夏（Alphonse Mucha）装饰艺术为灵感，采用温润羊皮纸底色、流动藤蔓花纹与古典金边装饰，将群聊数据装帧为古典画报。
     *   **双色交错和谐排版**：核心数据、热议话题、群芳雅鉴与金句回响采用森林绿与复古金双色交替排版，层次分明、典雅克制。
 
-<a href="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg"><img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg" alt="art_nouveau 示例" height="520"></a>
+<a href="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg"><img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/art_nouveau-demo.jpg" alt="art_nouveau 示例" height="520"></a>
 
 
 *   **🪄 【体验优化】模版分析区域智能隐藏（告别未开启功能的空白标题）**：
@@ -354,7 +391,7 @@
 <table align="center" width="100%">
   <tr>
     <td align="center" width="100%" valign="top">
-      <img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/comic-demo.jpg" alt="群每日漫画功能" width="60%">
+      <img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/comic-demo.jpg" alt="群每日漫画功能" width="60%">
       <p><b>参考 Atri 人格的群每日漫画 Demo</b></p>
     </td>
   </tr>
@@ -477,7 +514,7 @@
 ## [v4.9.13] - feat(ATRI): ATRI 模板 (@Liangyu-G)
 *   **✨ 新模板 ATRI**: 感谢 @Liangyu-G 的贡献，新增了一个名为 ATRI 的模板，灵感来源于 ATRI 的可爱风格，适合喜欢二次元风格的用户使用。（“她太可爱了，就是太可爱了，那个剧情也特别好，但她真的太可爱了。在聊天的过程中，Soulter不止一次和我强调了亚托莉可爱这一点，甚至一度说不出其他话了”
 ）
-<img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/ATRI-demo.jpg" alt="ATRI" width="100%">
+<img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/ATRI-demo.jpg" alt="ATRI" width="100%">
 
 ## [v4.9.12] - 移除无效的重试器
 
@@ -494,7 +531,7 @@
 ## [v4.9.8] - feat(HatsuneMiku): 新增了一个名为 HatsuneMiku 的模板 (#134 @Shiitin)
 *   **🐛 黑白名单修复**: 分析名单准入并修复 AstrBot 内置白名单绕过问题 （情况如 #133 所述）
 *   **✨ 新模板 HatsuneMiku**: 感谢 @Shiitin 的贡献，新增了一个名为 HatsuneMiku 的模板，灵感来源于初音未来的可爱风格，适合喜欢二次元风格的用户使用。      
-<img src="https://fastly.jsdelivr.net/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/HatsuneMiku-demo.jpg" alt="HatsuneMiku" width="100%">
+<img src="https://cdn.jsdmirror.com/gh/SXP-Simon/astrbot_plugin_qq_group_daily_analysis@main/assets/HatsuneMiku-demo.jpg" alt="HatsuneMiku" width="100%">
 
 ## [v4.9.7] - feat(分析配置细粒度化): 引入三层黑白名单机制（基础群分析开关、定时分析、增量分析），支持更细粒度的群级分析控制；修复自动分析生命周期管理情况避免任务被静默跳过
 *   **🐛 自动分析调度修复**: 修复自动分析任务生命周期检查链路，重置 `schedule_jobs` 后 `_terminating` 状态，避免任务被静默跳过；增量分析任务生命周期行为与定时分析保持一致。(#130 @Dongmayyys)
